@@ -20,7 +20,7 @@ This repository contains an implementation of Neural Style Transfer (NST) using 
 
 ## Introduction
 
-In this project, I've implemented a neural style transfer algorithm that takes two input images: a content image and a style image, and produces a third image that combines the content of the content image with the artistic style of the style image. This technique is not only fascinating from an artistic perspective but also showcases the power of deep neural networks.
+In this project, I've implemented a neural style transfer algorithm using a pretrained VGG-19 network, that takes two input images: a content image and a style image, and produces a third image that combines the content of the content image with the artistic style of the style image. This technique is not only fascinating from an artistic perspective but also showcases the power of deep neural networks.
 
 ## How NST Works
 
@@ -45,7 +45,7 @@ NST optimizes the target image by minimizing a combined loss function that inclu
 
 ## Intuition of the Model
 
-The NST model leverages the ability of CNNs to capture high-level content and style features. By minimizing the content and style losses, the model ensures that the generated image retains the content of the content image while incorporating the artistic style of the style image.
+The NST model leverages the ability of CNNs to capture high-level content and style features. By minimizing the content and style losses,  our model strives to capture content while embracing style. It's like Picasso collaborating with your vacation photos!
 
 ## Results
 
