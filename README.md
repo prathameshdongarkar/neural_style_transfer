@@ -12,11 +12,12 @@ This repository contains an implementation of Neural Style Transfer (NST) using 
 2. [How NST Works](#how-nst-works)
 3. [Mathematical Formulas](#mathematical-formulas)
 4. [Loss Functions](#loss-functions)
-5. [Intuition of the Model](#intuition-of-the-model)
-6. [Results](#results)
-7. [Usage](#usage)
-8. [Dependencies](#dependencies)
-9. [Acknowledgements](#acknowledgements)
+5. [Implementation](#implementation)
+6. [Intuition of the Model](#intuition-of-the-model)
+7. [Results](#results)
+8. [Usage](#usage)
+9. [Dependencies](#dependencies)
+10. [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
@@ -42,6 +43,10 @@ Style loss is computed as the mean squared difference between the Gram matrices 
 ## Loss Functions
 
 NST optimizes the target image by minimizing a combined loss function that includes both content and style losses.
+
+## Implementation
+
+All the images were generated using the Adam optimizer rather than the L-BFGS optimizer used in the original paper due to lack of resources. The content losses were calculated using the conv4_2 layer of the vgg19 network and the style losses were calculated using the conv1_1, conv2_1, conv3_1, conv4_1 and conv5_1 layers.
 
 ## Intuition of the Model
 
